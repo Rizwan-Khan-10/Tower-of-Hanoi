@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of hanoi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Tower of Hanoi</h2>
+        <div class="rules">
+            <h3>Rules</h3>
+            <ul>
+                <li>You have three rods (or towers) and a number of disks of different sizes that can slide onto any
+                    rod.</li>
+                <li>Initially, all disks are stacked on one rod, in decreasing size from bottom to top.</li>
+                <li>The objective is to move all the disks from the starting rod to the target rod.</li>
+                <li>Only one disk can be moved at a time.</li>
+                <li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another
+                    stack or on an empty rod.</li>
+                <li>A disk may only be placed on top of a larger disk or on an empty rod.</li>
+                <li>The goal is to move all the disks from the first rod to the secind or third rod, following the rules
+                    above.</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="board">
+            <div class="tower" id="Tower1">
+                <div class="base"></div>
+            </div>
+            <div class="tower" id="Tower2">
+                <div class="base"></div>
+            </div>
+            <div class="tower" id="Tower3">
+                <div class="base"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="result">
+            <div id="moves">
+                <span id="your-move"></span>
+                <span id="min-move"></span>
+            </div>
+            <div id="disks-info">
+                <span id="decrease">-</span>
+                <span id="no-of-disk">3</span>
+                <span id="increase">+</span>
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="reset" class="btn">Reset</button>
+            <button id="showSolution" class="btn">Show Solution</button>
+        </div>
+        <div id="solution"></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
